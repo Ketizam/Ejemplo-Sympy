@@ -21,8 +21,10 @@ print("Integral de exp(-x):", sp.integrate(sp.exp(-x), x))
 # ================================
 # Definir una matriz simbólica
 M = sp.Matrix([[x, y], [y, z]])
+K = sp.Matrix([[5, 6],[8, 9]])
 print("\nMatriz M:")
 sp.pprint(M)
+sp.pprint(K)
 
 # Determinante
 print("\nDeterminante de M:", M.det())
@@ -33,7 +35,7 @@ sp.pprint(M.T)
 
 # Inversa (si es invertible)
 print("\nInversa de M:")
-sp.pprint(M.inv())
+sp.pprint(K.inv())
 
 # ================================
 # 3. Evaluación numérica
